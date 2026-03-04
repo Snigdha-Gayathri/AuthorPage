@@ -15,7 +15,7 @@ export default function HeroSection() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-[1.2fr_0.8fr]">
         <SectionReveal>
           <p className="mb-5 text-xs uppercase tracking-[0.28em] text-candle-muted/80">About The Author</p>
-          <h1 className="font-serif text-4xl leading-tight text-candle-text md:text-6xl lg:text-7xl">
+          <h1 className="font-serif text-4xl leading-tight text-candle-gold md:text-6xl lg:text-7xl">
             Snigdha Gayathri
             <br />
             Mandapati

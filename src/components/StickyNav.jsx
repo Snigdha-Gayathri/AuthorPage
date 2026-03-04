@@ -15,7 +15,7 @@ export default function StickyNav({ scrolled }) {
         }`}
       >
         <div className="flex items-center justify-between">
-          <a href="#home" className="font-serif text-xs tracking-[0.18em] text-candle-gold/90 uppercase sm:text-sm sm:tracking-[0.22em]">
+          <a href="#home" className="font-serif text-xs tracking-[0.18em] text-candle-gold uppercase sm:text-sm sm:tracking-[0.22em]">
             Snigdha Gayathri
           </a>
 
