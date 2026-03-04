@@ -17,19 +17,15 @@ export default function QuotesSection() {
           {bookQuotes.map((quote, index) => (
             <SectionReveal key={index} delay={Math.min(index * 0.015, 0.14)}>
               <motion.article
-                className="mx-auto max-w-4xl rounded-3xl px-4 py-3 text-center transition-all duration-300"
-                initial={{ boxShadow: "0 0 0 rgba(255,140,0,0)", backgroundColor: "rgba(0,0,0,0)" }}
+                className="mx-auto max-w-4xl rounded-3xl border border-candle-gold/45 bg-[#24182c]/22 px-4 py-3 text-center transition-all duration-300"
+                initial={{ boxShadow: "0 0 0 rgba(213,178,119,0)", backgroundColor: "rgba(36,24,44,0.22)" }}
                 whileInView={{
-                  boxShadow: [
-                    "0 0 0 rgba(255,140,0,0)",
-                    "0 0 28px rgba(255,140,0,0.48)",
-                    "0 0 12px rgba(255,140,0,0.22)",
-                  ],
-                  backgroundColor: ["rgba(0,0,0,0)", "rgba(255,140,0,0.1)", "rgba(0,0,0,0)"],
+                  boxShadow: ["0 0 0 rgba(213,178,119,0)", "0 0 16px rgba(213,178,119,0.22)", "0 0 8px rgba(213,178,119,0.14)"],
+                  backgroundColor: ["rgba(36,24,44,0.22)", "rgba(36,24,44,0.30)", "rgba(36,24,44,0.22)"],
                 }}
                 whileHover={{
-                  boxShadow: "0 0 30px rgba(255,140,0,0.55)",
-                  backgroundColor: "rgba(255,140,0,0.14)",
+                  boxShadow: "0 0 20px rgba(213,178,119,0.3)",
+                  backgroundColor: "rgba(36,24,44,0.34)",
                 }}
                 viewport={{ once: true, amount: 0.45 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}

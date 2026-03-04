@@ -27,7 +27,7 @@ export default function AboutAuthorSection() {
             Engineer of morally grey devotion from Andhra Pradesh, India.
           </p>
           <p className="mt-6 max-w-2xl text-[1.03rem] leading-relaxed text-candle-muted">
-            Snigdha Gayathri is a dark romance author who blends artificial intelligence with obsessive devotion.
+            Snigdha Gayathri is a romance author who blends artificial intelligence with obsessive devotion.
           </p>
           <p className="mt-5 text-candle-muted">More stories coming soon.</p>
           <div className="mt-7 flex flex-wrap gap-3">

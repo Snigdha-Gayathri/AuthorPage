@@ -37,7 +37,7 @@ export default function CharactersSection() {
               name="Myra"
               subtitle="AI Engineer"
               image={media.myraPhoto}
-              tone="border-[#6cb6ff]/45 bg-gradient-to-br from-[#1e90ff] to-[#1a5fb8] hover:shadow-[0_0_28px_rgba(30,144,255,0.35)]"
+              tone="border-candle-gold/45 bg-gradient-to-br from-[#1e90ff] to-[#1a5fb8] hover:shadow-[0_0_28px_rgba(213,178,119,0.3)]"
               description={`Myra is precision in human form — intelligent, analytical, and composed to the point of quiet mystery. She dissects problems before they can touch her, trusts logic over impulse, and believes in systems because they don’t betray.
 
 She wears control like armor. Measures her words. Guards her vulnerabilities behind reason and restraint.
@@ -51,7 +51,7 @@ Yet beneath all that discipline lives a heart far softer than she lets the world
               name="Aaron"
               subtitle="King of Ashes"
               image={media.aaronPhoto}
-              tone="border-[#8c8f96]/30 bg-gradient-to-br from-[#2b2d33] to-[#3a3d44] hover:shadow-[0_0_30px_rgba(145,148,154,0.25)]"
+              tone="border-candle-gold/45 bg-gradient-to-br from-[#2b2d33] to-[#3a3d44] hover:shadow-[0_0_28px_rgba(213,178,119,0.3)]"
               description={`Aaron moves like strategy and ruin — every step measured, every decision deliberate. He isn’t reckless; he’s refined chaos, controlled and intentional. Morally grey not because he lacks a compass, but because he chooses outcomes over innocence. Dangerous by design, sharp at the edges, impossible to misread.
 
 To the world, he is brutality wrapped in composure — a man built to command, to conquer, to dismantle without hesitation.
