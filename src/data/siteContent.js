@@ -60,9 +60,9 @@ export const tropes = [
   "Morally grey MMC",
 ];
 
-export const blurb = `Myra believes in algorithms—predictable systems, controlled outcomes, logic that never fails.
+export const blurb = `Myra Nishkar believes in algorithms—predictable systems, controlled outcomes, logic that never fails.
 
-Aaron rules through calculated destruction and absolute control.
+Aaron Rithan rules through calculated destruction and absolute control.
 
 When a mind built on precision collides with a king forged in ash, logic begins to fracture.
 

@@ -34,7 +34,7 @@ export default function CharactersSection() {
         <div className="mt-12 grid gap-7 md:grid-cols-2">
           <SectionReveal className="h-full">
             <CharacterPanel
-              name="Myra"
+              name="Myra Nishkar"
               subtitle="AI Engineer"
               image={media.myraPhoto}
               tone="border-candle-gold/45 bg-gradient-to-br from-[#1e90ff] to-[#1a5fb8] hover:shadow-[0_0_28px_rgba(213,178,119,0.3)]"
@@ -48,7 +48,7 @@ Yet beneath all that discipline lives a heart far softer than she lets the world
 
           <SectionReveal delay={0.08} className="h-full">
             <CharacterPanel
-              name="Aaron"
+              name="Aaron Rithan"
               subtitle="King of Ashes"
               image={media.aaronPhoto}
               tone="border-candle-gold/45 bg-gradient-to-br from-[#2b2d33] to-[#3a3d44] hover:shadow-[0_0_28px_rgba(213,178,119,0.3)]"
