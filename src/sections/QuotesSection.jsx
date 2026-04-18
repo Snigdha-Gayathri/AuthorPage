@@ -18,16 +18,12 @@ export default function QuotesSection() {
             <SectionReveal key={index} delay={Math.min(index * 0.015, 0.14)}>
               <motion.article
                 className="mx-auto max-w-4xl rounded-3xl border border-candle-gold/45 bg-[#24182c]/22 px-4 py-3 text-center transition-all duration-300"
-                initial={{ boxShadow: "0 0 0 rgba(213,178,119,0)", backgroundColor: "rgba(36,24,44,0.22)" }}
+                initial={{ backgroundColor: "rgba(36,24,44,0.22)" }}
                 whileInView={{
-                  boxShadow: ["0 0 0 rgba(213,178,119,0)", "0 0 16px rgba(213,178,119,0.22)", "0 0 8px rgba(213,178,119,0.14)"],
                   backgroundColor: ["rgba(36,24,44,0.22)", "rgba(36,24,44,0.30)", "rgba(36,24,44,0.22)"],
                 }}
                 whileHover={{
-                  boxShadow: "0 0 26px rgba(230,182,87,0.72), 0 0 50px rgba(223,166,55,0.55), inset 0 0 18px rgba(248,216,138,0.22)",
-                  borderColor: "rgba(243, 193, 87, 0.95)",
-                  backgroundColor: "rgba(48,33,22,0.52)",
-                  y: -3,
+                  backgroundColor: "rgba(42,28,54,0.42)",
                 }}
                 viewport={{ once: true, amount: 0.45 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
