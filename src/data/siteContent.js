@@ -9,10 +9,9 @@ import bookArt04 from "../assets/BookArt/Gemini_Generated_Image_aezr85aezr85aezr
 import bookArt05 from "../assets/BookArt/Gemini_Generated_Image_gc9i9vgc9i9vgc9i.png";
 import bookArt06 from "../assets/BookArt/Gemini_Generated_Image_hoq8smhoq8smhoq8.png";
 import bookArt07 from "../assets/BookArt/Gemini_Generated_Image_mfua2dmfua2dmfua.png";
-import bookArt08 from "../assets/BookArt/Gemini_Generated_Image_sl28cfsl28cfsl28.png";
-import bookArt09 from "../assets/BookArt/Gemini_Generated_Image_xxagyxxagyxxagyx.png";
-import bookArt10 from "../assets/BookArt/Gemini_Generated_Image_yu40nvyu40nvyu40.png";
-import bookArt11 from "../assets/BookArt/R9psF.jpg";
+import bookArt08 from "../assets/BookArt/Gemini_Generated_Image_xxagyxxagyxxagyx.png";
+import bookArt09 from "../assets/BookArt/Gemini_Generated_Image_yu40nvyu40nvyu40.png";
+import bookArt10 from "../assets/BookArt/R9psF.jpg";
 
 export const buyUrl =
   "https://www.amazon.in/Ashes-Algorithms-Calculated-Reckless-hearts-ebook/dp/B0GMJYD7MV/";
@@ -45,7 +44,6 @@ export const bookArtGallery = [
   bookArt08,
   bookArt09,
   bookArt10,
-  bookArt11,
 ];
 
 export const bookQuotes = [
