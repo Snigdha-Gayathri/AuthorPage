@@ -11,7 +11,7 @@ function CharacterPanel({ name, subtitle, description, tone, image }) {
     >
       <div className="grid h-full gap-5 md:grid-cols-[220px_1fr] md:items-start">
         <div className="mx-auto h-[300px] w-full max-w-[220px] overflow-hidden rounded-2xl border border-white/20 bg-[#11151f] shadow-candle md:h-[340px]">
-          <img src={image} alt={name} className="h-full w-full object-cover object-top" />
+          <img src={image} alt={name} className="h-full w-full object-contain object-center" />
         </div>
         <div>
           <p className="text-xs uppercase tracking-[0.24em] text-candle-muted/85">{subtitle}</p>

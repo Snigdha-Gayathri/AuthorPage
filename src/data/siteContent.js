@@ -13,6 +13,11 @@ import bookArt08 from "../assets/BookArt/Gemini_Generated_Image_xxagyxxagyxxagyx
 import bookArt09 from "../assets/BookArt/Gemini_Generated_Image_yu40nvyu40nvyu40.png";
 import bookArt10 from "../assets/BookArt/R9psF.jpg";
 
+const memeModules = import.meta.glob("../assets/Book Memes/*.{jpg,jpeg,png,webp}", {
+  eager: true,
+  import: "default",
+});
+
 export const buyUrl =
   "https://www.amazon.in/Ashes-Algorithms-Calculated-Reckless-hearts-ebook/dp/B0GMJYD7MV/";
 
@@ -21,6 +26,7 @@ export const navItems = [
   { label: "The Book", href: "#book" },
   { label: "Characters", href: "#characters" },
   { label: "Book Art", href: "#book-art" },
+  { label: "Book Memes", href: "#book-memes" },
   { label: "Quotes", href: "#quotes" },
   { label: "About", href: "#about" },
   { label: "Buy", href: buyUrl, external: true },
@@ -45,6 +51,10 @@ export const bookArtGallery = [
   bookArt09,
   bookArt10,
 ];
+
+export const bookMemesGallery = Object.entries(memeModules)
+  .sort(([pathA], [pathB]) => pathA.localeCompare(pathB))
+  .map(([, source]) => source);
 
 export const bookQuotes = [
   "I want to make you my possible, so I don't mind being impossible.",

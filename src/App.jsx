@@ -5,6 +5,7 @@ import FeaturedBookSection from "./sections/FeaturedBookSection";
 import HeroSection from "./sections/HeroSection";
 import CharactersSection from "./sections/CharactersSection";
 import BookArtSection from "./sections/BookArtSection";
+import BookMemesSection from "./sections/BookMemesSection";
 import QuotesSection from "./sections/QuotesSection";
 import AboutAuthorSection from "./sections/AboutAuthorSection";
 import SiteFooter from "./sections/SiteFooter";
@@ -28,6 +29,7 @@ export default function App() {
         <FeaturedBookSection />
         <CharactersSection />
         <BookArtSection />
+        <BookMemesSection />
         <QuotesSection />
         <AboutAuthorSection />
       </main>
