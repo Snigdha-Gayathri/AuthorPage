@@ -38,11 +38,11 @@ export default function BookArtSection() {
                     key={image}
                     className="w-[84vw] max-w-[620px] shrink-0 snap-center overflow-hidden rounded-2xl border border-candle-gold/30 bg-[#1a1224] sm:w-[70vw] md:w-[48vw] lg:w-[39vw]"
                   >
-                    <div className="aspect-[16/10] w-full bg-black/25">
+                    <div className="aspect-[16/10] w-full bg-black/35 p-2 md:p-3">
                       <img
                         src={image}
                         alt={`Book art ${index + 1}`}
-                        className="h-full w-full object-cover transition duration-500 hover:scale-[1.02]"
+                        className="h-full w-full object-contain"
                         loading={index === 0 ? "eager" : "lazy"}
                       />
                     </div>
