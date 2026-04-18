@@ -1,5 +1,5 @@
 import bookCover from "../assets/cover.png";
-import authorPhoto from "../assets/author photo.png";
+import authorPhoto from "../assets/author photo.jpeg";
 import myraPhoto from "../assets/FMC.jpg";
 import aaronPhoto from "../assets/MMC.png";
 import bookArt01 from "../assets/BookArt/ChatGPT Image Mar 26, 2026, 08_51_42 PM.png";
