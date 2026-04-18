@@ -4,6 +4,7 @@ import StickyNav from "./components/StickyNav";
 import FeaturedBookSection from "./sections/FeaturedBookSection";
 import HeroSection from "./sections/HeroSection";
 import CharactersSection from "./sections/CharactersSection";
+import BookArtSection from "./sections/BookArtSection";
 import QuotesSection from "./sections/QuotesSection";
 import AboutAuthorSection from "./sections/AboutAuthorSection";
 import SiteFooter from "./sections/SiteFooter";
@@ -26,6 +27,7 @@ export default function App() {
         <HeroSection />
         <FeaturedBookSection />
         <CharactersSection />
+        <BookArtSection />
         <QuotesSection />
         <AboutAuthorSection />
       </main>

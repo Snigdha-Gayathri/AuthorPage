@@ -24,15 +24,17 @@ export default function QuotesSection() {
                   backgroundColor: ["rgba(36,24,44,0.22)", "rgba(36,24,44,0.30)", "rgba(36,24,44,0.22)"],
                 }}
                 whileHover={{
-                  boxShadow: "0 0 20px rgba(213,178,119,0.3)",
-                  backgroundColor: "rgba(36,24,44,0.34)",
+                  boxShadow: "0 0 26px rgba(230,182,87,0.72), 0 0 50px rgba(223,166,55,0.55), inset 0 0 18px rgba(248,216,138,0.22)",
+                  borderColor: "rgba(243, 193, 87, 0.95)",
+                  backgroundColor: "rgba(48,33,22,0.52)",
+                  y: -3,
                 }}
                 viewport={{ once: true, amount: 0.45 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
               >
                 <p
-                  className="text-xl italic leading-relaxed text-candle-text md:text-3xl"
-                  style={{ fontFamily: "Times New Roman, Times, serif" }}
+                  className="text-xl leading-relaxed text-candle-text md:text-3xl"
+                  style={{ fontFamily: "Times New Roman, Times, serif", fontStyle: "italic", fontWeight: 400 }}
                 >
                   “{quote}”
                 </p>
