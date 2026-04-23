@@ -19,7 +19,7 @@ export default function AboutAuthorSection() {
         </SectionReveal>
 
         <SectionReveal delay={0.07}>
-          <h2 className="font-serif text-4xl text-candle-text md:text-5xl">Snigdha Gayathri</h2>
+          <h2 className="text-metallic-gold font-serif text-4xl md:text-5xl">Snigdha Gayathri</h2>
           <p className="mt-2 text-sm font-medium tracking-[0.14em] text-candle-gold/85 uppercase">
             Snigdha Gayathri Mandapati
           </p>
