@@ -10,12 +10,12 @@ export default function StickyNav({ scrolled }) {
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
       <div
-        className={`mx-auto mt-3 w-[94%] max-w-6xl rounded-3xl border border-white/10 px-3 py-3 md:mt-4 md:rounded-full md:px-6 ${
-          scrolled ? "bg-[#1a1223]/85 shadow-candle backdrop-blur-xl" : "bg-[#1a1223]/55 backdrop-blur-md"
+        className={`mx-auto mt-3 w-[94%] max-w-6xl rounded-3xl border border-candle-gold/25 px-3 py-3 md:mt-4 md:rounded-full md:px-6 ${
+          scrolled ? "bg-white/82 shadow-candle backdrop-blur-xl" : "bg-white/60 backdrop-blur-md"
         }`}
       >
         <div className="flex items-center justify-between">
-          <a href="#home" className="font-serif text-xs tracking-[0.18em] text-candle-gold uppercase sm:text-sm sm:tracking-[0.22em]">
+          <a href="#home" className="text-metallic-gold font-serif text-xs tracking-[0.18em] uppercase sm:text-sm sm:tracking-[0.22em]">
             Snigdha Gayathri
           </a>
 

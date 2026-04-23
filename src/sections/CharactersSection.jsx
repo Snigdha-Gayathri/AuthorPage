@@ -10,7 +10,7 @@ function CharacterPanel({ name, subtitle, description, tone, image }) {
       className={`h-full rounded-3xl border p-6 md:p-7 shadow-candle transition ${tone}`}
     >
       <div className="grid h-full gap-5 md:grid-cols-[220px_1fr] md:items-start">
-        <div className="mx-auto h-[300px] w-full max-w-[220px] overflow-hidden rounded-2xl border border-white/20 bg-[#11151f] shadow-candle md:h-[340px]">
+        <div className="mx-auto h-[300px] w-full max-w-[220px] overflow-hidden rounded-2xl border border-candle-gold/25 bg-white/88 shadow-candle md:h-[340px]">
           <img src={image} alt={name} className="h-full w-full object-contain object-center" />
         </div>
         <div>
@@ -37,7 +37,7 @@ export default function CharactersSection() {
               name="Myra Nishkar"
               subtitle="AI Engineer"
               image={media.myraPhoto}
-              tone="border-candle-gold/45 bg-gradient-to-br from-[#1e90ff] to-[#1a5fb8] hover:shadow-[0_0_28px_rgba(213,178,119,0.3)]"
+              tone="border-candle-gold/45 bg-gradient-to-br from-[#eff6ff] to-[#bfdbfe] hover:shadow-[0_0_28px_rgba(10,31,92,0.3)]"
               description={`Myra is precision in human form — intelligent, analytical, and composed to the point of quiet mystery. She dissects problems before they can touch her, trusts logic over impulse, and believes in systems because they don’t betray.
 
 She wears control like armor. Measures her words. Guards her vulnerabilities behind reason and restraint.
@@ -51,7 +51,7 @@ Yet beneath all that discipline lives a heart far softer than she lets the world
               name="Aaron Rithan"
               subtitle="King of Ashes"
               image={media.aaronPhoto}
-              tone="border-candle-gold/45 bg-gradient-to-br from-[#2b2d33] to-[#3a3d44] hover:shadow-[0_0_28px_rgba(213,178,119,0.3)]"
+              tone="border-candle-gold/45 bg-gradient-to-br from-[#e0eeff] to-[#9ec5ff] hover:shadow-[0_0_28px_rgba(10,31,92,0.3)]"
               description={`Aaron moves like strategy and ruin — every step measured, every decision deliberate. He isn’t reckless; he’s refined chaos, controlled and intentional. Morally grey not because he lacks a compass, but because he chooses outcomes over innocence. Dangerous by design, sharp at the edges, impossible to misread.
 
 To the world, he is brutality wrapped in composure — a man built to command, to conquer, to dismantle without hesitation.

@@ -19,7 +19,7 @@ export default function AtmosphereLayer() {
       {lights.map((light) => (
         <motion.span
           key={light.id}
-          className="absolute h-2 w-2 rounded-full bg-candle-ember/40 blur-[1px]"
+          className="absolute h-2 w-2 rounded-full bg-candle-ember/45 blur-[1px]"
           style={{ left: light.left, bottom: "-8%" }}
           animate={{ y: [0, -260], opacity: [0, 0.25, 0.1, 0] }}
           transition={{

@@ -17,13 +17,13 @@ export default function QuotesSection() {
           {bookQuotes.map((quote, index) => (
             <SectionReveal key={index} delay={Math.min(index * 0.015, 0.14)}>
               <motion.article
-                className="mx-auto max-w-4xl rounded-3xl border border-candle-gold/45 bg-[#24182c]/22 px-4 py-3 text-center transition-all duration-300"
-                initial={{ backgroundColor: "rgba(36,24,44,0.22)" }}
+                className="mx-auto max-w-4xl rounded-3xl border border-candle-gold/45 bg-white/35 px-4 py-3 text-center transition-all duration-300"
+                initial={{ backgroundColor: "rgba(255,255,255,0.35)" }}
                 whileInView={{
-                  backgroundColor: ["rgba(36,24,44,0.22)", "rgba(36,24,44,0.30)", "rgba(36,24,44,0.22)"],
+                  backgroundColor: ["rgba(255,255,255,0.35)", "rgba(219,234,254,0.5)", "rgba(255,255,255,0.35)"],
                 }}
                 whileHover={{
-                  backgroundColor: "rgba(42,28,54,0.42)",
+                  backgroundColor: "rgba(191,219,254,0.62)",
                 }}
                 viewport={{ once: true, amount: 0.45 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}

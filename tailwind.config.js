@@ -5,19 +5,19 @@ export default {
     extend: {
       colors: {
         candle: {
-          base: "#140f1b",
-          plum: "#2a1a36",
-          wine: "#4b1f37",
-          aubergine: "#1b1225",
-          gold: "#d5b277",
-          ember: "#b96a44",
-          text: "#f2e8db",
-          muted: "#c9b8a0",
+          base: "#1e90ff",
+          plum: "#5fb0ff",
+          wine: "#9bd0ff",
+          aubergine: "#0f2f7a",
+          gold: "#0a1f5c",
+          ember: "#16429f",
+          text: "#081a4d",
+          muted: "#12367f",
         },
       },
       boxShadow: {
-        candle: "0 18px 45px rgba(8, 6, 12, 0.45)",
-        glow: "0 0 24px rgba(185, 106, 68, 0.28)",
+        candle: "0 18px 45px rgba(8, 26, 77, 0.28)",
+        glow: "0 0 24px rgba(10, 31, 92, 0.35)",
       },
       fontFamily: {
         serif: ["Playfair Display", "Cormorant Garamond", "serif"],

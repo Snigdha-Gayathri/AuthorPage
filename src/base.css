@@ -14,10 +14,10 @@
   body {
     margin: 0;
     background:
-      radial-gradient(1000px 620px at 20% 100%, rgba(185, 106, 68, 0.13), transparent 60%),
-      radial-gradient(980px 640px at 88% -10%, rgba(99, 36, 65, 0.2), transparent 58%),
-      linear-gradient(160deg, #1a1022 0%, #140f1b 48%, #120d1a 100%);
-    color: #f2e8db;
+      radial-gradient(1000px 620px at 18% 100%, rgba(255, 255, 255, 0.22), transparent 62%),
+      radial-gradient(980px 640px at 88% -10%, rgba(10, 31, 92, 0.18), transparent 60%),
+      linear-gradient(160deg, #1e90ff 0%, #1e90ff 100%);
+    color: #081a4d;
     font-family: Inter, "DM Sans", sans-serif;
   }
 
@@ -49,8 +49,11 @@
       );
     -webkit-background-clip: text;
     background-clip: text;
+    background-repeat: no-repeat;
     color: transparent;
     -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding-bottom: 0.08em;
     text-shadow:
       0 1px 0 rgba(255, 242, 168, 0.2),
       0 2px 4px rgba(0, 0, 0, 0.28),

@@ -10,10 +10,10 @@ export default function AboutAuthorSection() {
     <section id="about" className="px-6 py-24 md:py-28">
       <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[0.82fr_1.18fr] md:items-center">
         <SectionReveal>
-          <div className="mx-auto aspect-[4/5] w-full max-w-sm rounded-[2rem] border border-candle-gold/25 bg-gradient-to-br from-[#26182f] to-[#4b2e44] p-4 shadow-candle">
+          <div className="mx-auto aspect-[4/5] w-full max-w-sm rounded-[2rem] border border-candle-gold/25 bg-gradient-to-br from-[#eff6ff] to-[#bfdbfe] p-4 shadow-candle">
             <div
               className="flex h-full items-center justify-center rounded-[1.6rem] border border-dashed border-candle-gold/35 bg-cover bg-center px-6 text-center font-serif text-lg text-candle-muted"
-              style={{ backgroundImage: `linear-gradient(rgba(27, 19, 37, 0.4), rgba(27, 19, 37, 0.4)), url(${media.authorPhoto})` }}
+              style={{ backgroundImage: `linear-gradient(rgba(8, 26, 77, 0.22), rgba(8, 26, 77, 0.22)), url(${media.authorPhoto})` }}
             />
           </div>
         </SectionReveal>
@@ -35,7 +35,7 @@ export default function AboutAuthorSection() {
               href={instagramLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 rounded-full border border-candle-gold/30 bg-[#23172d]/70 px-5 py-2.5 text-sm font-medium text-candle-text transition hover:border-candle-gold/50 hover:shadow-glow"
+              className="inline-flex items-center gap-3 rounded-full border border-candle-gold/30 bg-white/80 px-5 py-2.5 text-sm font-medium text-candle-text transition hover:border-candle-gold/50 hover:shadow-glow"
             >
               <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-candle-gold/40 text-candle-gold">
                 <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-current" aria-hidden="true">
@@ -49,7 +49,7 @@ export default function AboutAuthorSection() {
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 rounded-full border border-candle-gold/30 bg-[#23172d]/70 px-5 py-2.5 text-sm font-medium text-candle-text transition hover:border-candle-gold/50 hover:shadow-glow"
+              className="inline-flex items-center gap-3 rounded-full border border-candle-gold/30 bg-white/80 px-5 py-2.5 text-sm font-medium text-candle-text transition hover:border-candle-gold/50 hover:shadow-glow"
             >
               <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-candle-gold/40 text-candle-gold">
                 <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-current" aria-hidden="true">
@@ -63,7 +63,7 @@ export default function AboutAuthorSection() {
               href={linkedinLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 rounded-full border border-candle-gold/30 bg-[#23172d]/70 px-5 py-2.5 text-sm font-medium text-candle-text transition hover:border-candle-gold/50 hover:shadow-glow"
+              className="inline-flex items-center gap-3 rounded-full border border-candle-gold/30 bg-white/80 px-5 py-2.5 text-sm font-medium text-candle-text transition hover:border-candle-gold/50 hover:shadow-glow"
             >
               <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-candle-gold/40 text-candle-gold">
                 <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-current" aria-hidden="true">

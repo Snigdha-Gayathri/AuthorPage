@@ -17,7 +17,7 @@ export default function BookArtSection() {
       <div className="mx-auto max-w-6xl">
         <SectionReveal>
           <h2 className="text-center font-serif text-4xl text-candle-text md:text-5xl">Book Art</h2>
-          <p className="mt-2 text-center text-[0.62rem] uppercase tracking-[0.26em] text-red-400 md:text-[0.66rem]">
+          <p className="mt-2 text-center text-[0.62rem] uppercase tracking-[0.26em] text-candle-gold md:text-[0.66rem]">
             spoiler alert
           </p>
           <p className="mx-auto mt-4 max-w-3xl text-center text-sm italic text-candle-muted md:text-base">
@@ -26,8 +26,8 @@ export default function BookArtSection() {
         </SectionReveal>
 
         <SectionReveal delay={0.05}>
-          <div className="mx-auto mt-12 max-w-6xl rounded-[2rem] border border-candle-gold/35 bg-gradient-to-br from-[#261833]/85 via-[#21162d]/90 to-[#1a1224]/85 p-4 shadow-[0_24px_56px_rgba(8,6,12,0.55)] md:p-6">
-            <div className="relative overflow-hidden rounded-[1.6rem] border border-candle-gold/25 bg-[#140f1b]/92 px-2 py-5 md:px-3">
+          <div className="mx-auto mt-12 max-w-6xl rounded-[2rem] border border-candle-gold/35 bg-gradient-to-br from-[#eff6ff]/90 via-[#dbeafe]/90 to-[#bfdbfe]/90 p-4 shadow-[0_24px_56px_rgba(8,26,77,0.26)] md:p-6">
+            <div className="relative overflow-hidden rounded-[1.6rem] border border-candle-gold/25 bg-white/88 px-2 py-5 md:px-3">
               <div
                 ref={ribbonRef}
                 className="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
@@ -36,7 +36,7 @@ export default function BookArtSection() {
                 {bookArtGallery.map((image, index) => (
                   <article
                     key={image}
-                    className="w-[84vw] max-w-[620px] shrink-0 snap-center overflow-hidden rounded-2xl border border-candle-gold/30 bg-[#1a1224] sm:w-[70vw] md:w-[48vw] lg:w-[39vw]"
+                    className="w-[84vw] max-w-[620px] shrink-0 snap-center overflow-hidden rounded-2xl border border-candle-gold/30 bg-[#dbeafe] sm:w-[70vw] md:w-[48vw] lg:w-[39vw]"
                   >
                     <div className="aspect-[16/10] w-full bg-black/35 p-2 md:p-3">
                       <img
@@ -57,7 +57,7 @@ export default function BookArtSection() {
                 <button
                   type="button"
                   onClick={() => pushRibbon(-1)}
-                  className="rounded-full border border-candle-gold/45 bg-[#1a1324]/82 px-4 py-2 text-xs uppercase tracking-[0.16em] text-candle-text transition hover:border-candle-gold hover:bg-[#251932]"
+                  className="rounded-full border border-candle-gold/45 bg-white/80 px-4 py-2 text-xs uppercase tracking-[0.16em] text-candle-text transition hover:border-candle-gold hover:bg-[#dbeafe]"
                   aria-label="Push ribbon right"
                 >
                   Prev
@@ -68,7 +68,7 @@ export default function BookArtSection() {
                 <button
                   type="button"
                   onClick={() => pushRibbon(1)}
-                  className="rounded-full border border-candle-gold/45 bg-[#1a1324]/82 px-4 py-2 text-xs uppercase tracking-[0.16em] text-candle-text transition hover:border-candle-gold hover:bg-[#251932]"
+                  className="rounded-full border border-candle-gold/45 bg-white/80 px-4 py-2 text-xs uppercase tracking-[0.16em] text-candle-text transition hover:border-candle-gold hover:bg-[#dbeafe]"
                   aria-label="Push ribbon left"
                 >
                   Next

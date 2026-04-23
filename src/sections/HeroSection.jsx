@@ -9,7 +9,7 @@ export default function HeroSection() {
       className="relative overflow-hidden px-5 pb-20 pt-32 md:px-6 md:pb-28 md:pt-44"
       style={{
         background:
-          "radial-gradient(900px 440px at 24% 28%, rgba(213,178,119,0.15), transparent 58%), radial-gradient(760px 420px at 86% 26%, rgba(120,42,74,0.22), transparent 60%)",
+          "radial-gradient(900px 440px at 24% 28%, rgba(255,255,255,0.22), transparent 58%), radial-gradient(760px 420px at 86% 26%, rgba(10,31,92,0.18), transparent 60%)",
       }}
     >
       <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-[1.2fr_0.8fr]">
@@ -31,21 +31,21 @@ I don’t write softness for the sake of it. I write intensity. Strategy. Posses
             href="#book"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.98 }}
-            className="mt-10 inline-flex rounded-full bg-gradient-to-r from-[#6c2e3f] via-[#7e3547] to-[#b06a46] px-8 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-candle-text shadow-candle transition hover:shadow-glow"
+            className="mt-10 inline-flex rounded-full bg-gradient-to-r from-[#ffffff] via-[#dbeafe] to-[#bfdbfe] px-8 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-candle-text shadow-candle transition hover:shadow-glow"
           >
             Explore The Book
           </motion.a>
         </SectionReveal>
 
         <SectionReveal delay={0.08}>
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm rounded-[2rem] border border-candle-gold/25 bg-gradient-to-br from-[#25172e] via-[#32203f] to-[#5f3b3a] p-4 shadow-candle">
-            <div className="h-full rounded-[1.7rem] border border-candle-gold/20 bg-[#1d1426]/90 p-6">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm rounded-[2rem] border border-candle-gold/25 bg-gradient-to-br from-[#eff6ff] via-[#dbeafe] to-[#bfdbfe] p-4 shadow-candle">
+            <div className="h-full rounded-[1.7rem] border border-candle-gold/20 bg-[#ffffff]/88 p-6">
               <div
                 className="flex h-full items-center justify-center rounded-[1.4rem] border border-dashed border-candle-gold/35 bg-cover bg-center"
-                style={{ backgroundImage: `linear-gradient(rgba(24, 16, 30, 0.35), rgba(24, 16, 30, 0.35)), url(${media.authorPhoto})` }}
+                style={{ backgroundImage: `linear-gradient(rgba(8, 26, 77, 0.2), rgba(8, 26, 77, 0.2)), url(${media.authorPhoto})` }}
               />
             </div>
-            <div className="pointer-events-none absolute inset-0 rounded-[2rem] shadow-[0_0_55px_rgba(185,106,68,0.18)]" />
+            <div className="pointer-events-none absolute inset-0 rounded-[2rem] shadow-[0_0_55px_rgba(10,31,92,0.2)]" />
           </div>
         </SectionReveal>
       </div>
