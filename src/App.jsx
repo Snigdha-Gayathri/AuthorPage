@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import AtmosphereLayer from "./components/AtmosphereLayer";
+import BookTrail from "./components/MangoTrail";
 import StickyNav from "./components/StickyNav";
 import BooksSection from "./sections/BooksSection";
 import BookstagramSection from "./sections/BookstagramSection";
@@ -22,6 +23,7 @@ export default function App() {
   return (
     <div className="relative overflow-hidden bg-candle-base text-candle-text">
       <AtmosphereLayer />
+      <BookTrail />
       <StickyNav
         scrolled={scrolled}
         activeBook={activeBook}
