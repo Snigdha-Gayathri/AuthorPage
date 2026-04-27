@@ -1,7 +1,9 @@
 import bookCover from "../assets/cover.png";
-import authorPhoto from "../assets/author photo.jpeg";
-import myraPhoto from "../assets/FMC.jpg";
+import authorPhoto from "../assets/author photo.jpg";
+import myraPhoto from "../assets/FMC.png";
+import fmcBackground from "../assets/FMC Background.png";
 import aaronPhoto from "../assets/MMC.png";
+import mmcBackground from "../assets/MMC Background.jpeg";
 import bookArt01 from "../assets/BookArt/ChatGPT Image Mar 26, 2026, 08_51_42 PM.png";
 import bookArt02 from "../assets/BookArt/Gemini_Generated_Image_2ds31d2ds31d2ds3.png";
 import bookArt03 from "../assets/BookArt/Gemini_Generated_Image_6ljzw76ljzw76ljz.png";
@@ -23,11 +25,7 @@ export const buyUrl =
 
 export const navItems = [
   { label: "Home", href: "#home" },
-  { label: "The Book", href: "#book" },
-  { label: "Characters", href: "#characters" },
-  { label: "Book Art", href: "#book-art" },
-  { label: "Book Memes", href: "#book-memes" },
-  { label: "Quotes", href: "#quotes" },
+  { label: "Bookstagram", href: "#bookstagram" },
   { label: "About", href: "#about" },
   { label: "Buy", href: buyUrl, external: true },
 ];
@@ -36,7 +34,9 @@ export const media = {
   bookCover,
   authorPhoto,
   myraPhoto,
+  fmcBackground,
   aaronPhoto,
+  mmcBackground,
 };
 
 export const bookArtGallery = [

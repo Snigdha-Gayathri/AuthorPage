@@ -8,7 +8,7 @@ export default function BookArtSection() {
   const pushRibbon = (direction) => {
     if (!ribbonRef.current) return;
     const viewport = ribbonRef.current;
-    const amount = Math.max(viewport.clientWidth * 0.78, 320);
+    const amount = Math.max(viewport.clientWidth * 0.72, 260);
     viewport.scrollBy({ left: amount * direction, behavior: "smooth" });
   };
 
@@ -16,8 +16,8 @@ export default function BookArtSection() {
     <section id="book-art" className="px-6 py-24 md:py-28">
       <div className="mx-auto max-w-6xl">
         <SectionReveal>
-          <h2 className="text-center font-serif text-4xl text-candle-text md:text-5xl">Book Art</h2>
-          <p className="mt-2 text-center text-[0.62rem] uppercase tracking-[0.26em] text-candle-gold md:text-[0.66rem]">
+          <h2 className="font-halimum text-center text-4xl text-candle-text md:text-5xl">Book Art</h2>
+          <p className="spoiler-alert-red mt-2 text-center text-[0.62rem] uppercase tracking-[0.26em] md:text-[0.66rem]">
             spoiler alert
           </p>
           <p className="mx-auto mt-4 max-w-3xl text-center text-sm italic text-candle-muted md:text-base">
@@ -26,27 +26,27 @@ export default function BookArtSection() {
         </SectionReveal>
 
         <SectionReveal delay={0.05}>
-          <div className="mx-auto mt-12 max-w-6xl rounded-[2rem] border border-candle-gold/35 bg-gradient-to-br from-[#eff6ff]/90 via-[#dbeafe]/90 to-[#bfdbfe]/90 p-4 shadow-[0_24px_56px_rgba(8,26,77,0.26)] md:p-6">
-            <div className="relative overflow-hidden rounded-[1.6rem] border border-candle-gold/25 bg-white/88 px-2 py-5 md:px-3">
+          <div className="mx-auto mt-12 max-w-6xl rounded-[2rem] border border-white/90 bg-gradient-to-br from-[#eff6ff]/92 via-[#dbeafe]/92 to-[#bfdbfe]/92 p-3 shadow-[0_0_44px_rgba(2,24,109,0.72)] md:p-4">
+            <div className="relative overflow-hidden rounded-[1.6rem] border border-[#1e90ff]/75 bg-white/82 p-2 md:p-2.5">
               <div
                 ref={ribbonRef}
-                className="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+                className="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth p-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
                 aria-label="Book art ribbon"
               >
                 {bookArtGallery.map((image, index) => (
                   <article
                     key={image}
-                    className="w-[84vw] max-w-[620px] shrink-0 snap-center overflow-hidden rounded-2xl border border-candle-gold/30 bg-[#dbeafe] sm:w-[70vw] md:w-[48vw] lg:w-[39vw]"
+                    className="w-[78vw] max-w-[340px] shrink-0 snap-start rounded-2xl border-2 border-white bg-[#eaf3ff] p-2 shadow-[0_14px_24px_rgba(2,24,109,0.3)] sm:w-[56vw] md:w-[34vw] lg:w-[29vw]"
                   >
-                    <div className="aspect-[16/10] w-full bg-black/35 p-2 md:p-3">
+                    <div className="aspect-[9/16] w-full overflow-hidden rounded-xl border-2 border-[#1e90ff] bg-[#dbeafe]">
                       <img
                         src={image}
                         alt={`Book art ${index + 1}`}
-                        className="h-full w-full object-contain"
+                        className="h-full w-full object-cover object-center"
                         loading={index === 0 ? "eager" : "lazy"}
                       />
                     </div>
-                    <p className="border-t border-candle-gold/20 px-4 py-2 text-[0.62rem] uppercase tracking-[0.2em] text-candle-muted/90 md:text-[0.68rem]">
+                    <p className="border-t border-[#1e90ff]/25 px-3 py-2 text-[0.6rem] uppercase tracking-[0.18em] text-candle-muted/90 md:text-[0.66rem]">
                       Art {index + 1}
                     </p>
                   </article>
