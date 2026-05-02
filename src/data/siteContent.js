@@ -1,5 +1,5 @@
 import bookCover from "../assets/cover.png";
-import authorPhoto from "../assets/author photo.jpg";
+import authorPhoto from "../assets/author photo.png";
 import myraPhoto from "../assets/FMC.png";
 import fmcBackground from "../assets/FMC Background.png";
 import aaronPhoto from "../assets/MMC.png";
