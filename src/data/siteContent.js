@@ -21,7 +21,7 @@ const memeModules = import.meta.glob("../assets/Book Memes/*.{jpg,jpeg,png,webp}
 });
 
 export const buyUrl =
-  "https://www.amazon.in/Ashes-Algorithms-Calculated-Reckless-hearts-ebook/dp/B0GMJYD7MV/";
+  "https://www.amazon.in/Ashes-Algorithms-Calculated-Minds-Reckless-ebook/dp/B0H5RBVBKC/ref=sr_1_2?crid=2PG8WFPKDRV5N&dib=eyJ2IjoiMSJ9.V9iLWRUGFAPOgyV6cvigbNUTMMe0TF2G5BzzTuW0PtB76hDY0pBZ6pJ5FyTgkL0cyk-ior8wf-itL5JeFPpVXg.54amfQHs-1v19rASqKWDDb3pJx9XBJevGr196itripQ&dib_tag=se&keywords=ashes+and+algorithms&qid=1782322155&sprefix=ashes+and+algorithm%2Caps%2C880&sr=8-2";
 
 export const navItems = [
   { label: "Home", href: "#home" },
