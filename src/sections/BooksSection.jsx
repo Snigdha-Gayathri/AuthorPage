@@ -1,11 +1,10 @@
-import { lazy, Suspense, useMemo } from "react";
+import { useMemo } from "react";
 import SectionReveal from "../components/SectionReveal";
 import FeaturedBookSection from "./FeaturedBookSection";
-
-const CharactersSection = lazy(() => import("./CharactersSection"));
-const BookArtSection = lazy(() => import("./BookArtSection"));
-const BookMemesSection = lazy(() => import("./BookMemesSection"));
-const QuotesSection = lazy(() => import("./QuotesSection"));
+import CharactersSection from "./CharactersSection";
+import BookArtSection from "./BookArtSection";
+import BookMemesSection from "./BookMemesSection";
+import QuotesSection from "./QuotesSection";
 
 function PlaceholderSubsection({ title, description }) {
   return (
@@ -43,18 +42,10 @@ export default function BooksSection({ activeBook }) {
             {activeBook === "ashes-and-algorithms" ? (
               <div className="mt-8 space-y-16">
                 <FeaturedBookSection />
-                <Suspense
-                  fallback={
-                    <div className="space-y-12 rounded-[2rem] border border-white/70 bg-white/40 px-6 py-10 text-center text-sm text-candle-muted shadow-[0_0_24px_rgba(2,24,109,0.14)]">
-                      Loading the rest of Ashes and Algorithms...
-                    </div>
-                  }
-                >
-                  <CharactersSection />
-                  <BookArtSection />
-                  <BookMemesSection />
-                  <QuotesSection />
-                </Suspense>
+                <CharactersSection />
+                <BookArtSection />
+                <BookMemesSection />
+                <QuotesSection />
               </div>
             ) : activeBook === "blood-and-bullets" ? (
               <PlaceholderSubsection
