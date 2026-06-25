@@ -27,6 +27,7 @@ export const navItems = [
   { label: "Home", href: "#home" },
   { label: "Bookstagram", href: "#bookstagram" },
   { label: "About", href: "#about" },
+  { label: "Email", href: "mailto:snigdhagayathriwrites@gmail.com" },
   { label: "Buy", href: buyUrl, external: true },
 ];
 

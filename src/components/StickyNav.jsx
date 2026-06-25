@@ -1,23 +1,9 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { navItems } from "../data/siteContent";
 
-const bookSubsections = [
-  { value: "ashes-and-algorithms", label: "Ashes and Algorithms" },
-  { value: "blood-and-bullets", label: "Blood and Bullets" },
-  { value: "crimes-and-calculations", label: "Crimes and Calculations" },
-];
-
-export default function StickyNav({ scrolled, activeBook, onBookChange, onAboutClick }) {
-  const [booksOpen, setBooksOpen] = useState(false);
+export default function StickyNav({ scrolled, onAboutClick }) {
   const homeNavItem = navItems.find((item) => item.label === "Home");
   const secondaryNavItems = navItems.filter((item) => item.label !== "Home");
-
-  const handleBookSelect = (value) => {
-    onBookChange(value);
-    setBooksOpen(false);
-    document.getElementById("books")?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
 
   const handleAboutSelect = (event) => {
     event.preventDefault();
@@ -55,37 +41,12 @@ export default function StickyNav({ scrolled, activeBook, onBookChange, onAboutC
               </a>
             ) : null}
 
-            <div className="relative">
-              <button
-                type="button"
-                onClick={() => setBooksOpen((open) => !open)}
-                className={`nav-adaptive-text inline-flex items-center gap-2 rounded-full border border-white/35 px-4 py-2 text-xs uppercase tracking-[0.18em] transition hover:opacity-80 ${
-                  booksOpen ? "bg-white/10" : "bg-transparent"
-                }`}
-                aria-expanded={booksOpen}
-                aria-haspopup="menu"
-              >
-                Books
-                <span className="text-[0.65rem]">▾</span>
-              </button>
-
-              {booksOpen ? (
-                <div className="absolute right-0 top-full mt-3 min-w-[260px] rounded-2xl border border-white/35 bg-white/90 p-2 shadow-[0_20px_45px_rgba(8,26,77,0.22)] backdrop-blur-xl">
-                  {bookSubsections.map((book) => (
-                    <button
-                      key={book.value}
-                      type="button"
-                      onClick={() => handleBookSelect(book.value)}
-                      className={`block w-full rounded-xl px-4 py-3 text-left text-xs uppercase tracking-[0.16em] transition ${
-                        activeBook === book.value ? "bg-[#dbeafe] text-[#081a4d]" : "text-candle-muted/90 hover:bg-[#eff6ff] hover:text-candle-text"
-                      }`}
-                    >
-                      {book.label}
-                    </button>
-                  ))}
-                </div>
-              ) : null}
-            </div>
+            <a
+              href="#books"
+              className="nav-adaptive-text rounded-full px-4 py-2 text-xs uppercase tracking-[0.18em] transition hover:opacity-80 hover:bg-white/10"
+            >
+              Books
+            </a>
 
             {secondaryNavItems.map((item) => (
               item.label === "About" ? (
@@ -122,17 +83,12 @@ export default function StickyNav({ scrolled, activeBook, onBookChange, onAboutC
             </a>
           ) : null}
 
-          <button
-            type="button"
-            onClick={() => setBooksOpen((open) => !open)}
-            className={`nav-adaptive-text shrink-0 rounded-full border border-white/35 px-3 py-1 text-[0.62rem] uppercase tracking-[0.16em] transition hover:opacity-80 ${
-              booksOpen ? "bg-white/10" : "bg-transparent"
-            }`}
-            aria-expanded={booksOpen}
-            aria-haspopup="menu"
+          <a
+            href="#books"
+            className="nav-adaptive-text shrink-0 rounded-full px-3 py-1 text-[0.62rem] uppercase tracking-[0.16em] transition hover:opacity-80 hover:bg-white/10"
           >
             Books
-          </button>
+          </a>
 
           {secondaryNavItems.map((item) => (
             item.label === "About" ? (
@@ -157,23 +113,6 @@ export default function StickyNav({ scrolled, activeBook, onBookChange, onAboutC
             )
           ))}
         </div>
-
-        {booksOpen ? (
-          <div className="mt-2 rounded-2xl border border-white/30 bg-white/86 p-2 backdrop-blur-xl md:hidden">
-            {bookSubsections.map((book) => (
-              <button
-                key={book.value}
-                type="button"
-                onClick={() => handleBookSelect(book.value)}
-                className={`block w-full rounded-xl px-4 py-3 text-left text-[0.68rem] uppercase tracking-[0.16em] transition ${
-                  activeBook === book.value ? "bg-[#dbeafe] text-[#081a4d]" : "text-candle-muted/90 hover:bg-[#eff6ff] hover:text-candle-text"
-                }`}
-              >
-                {book.label}
-              </button>
-            ))}
-          </div>
-        ) : null}
       </div>
     </motion.nav>
   );

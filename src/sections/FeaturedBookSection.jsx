@@ -18,6 +18,7 @@ export default function FeaturedBookSection() {
         </SectionReveal>
 
         <SectionReveal delay={0.06}>
+          <p className="text-xs uppercase tracking-[0.24em] text-candle-gold/80 font-serif mb-2">PRATHAMA</p>
           <h2 className="font-halimum text-4xl text-candle-text md:text-5xl">Ashes and Algorithms</h2>
           <p className="mt-6 whitespace-pre-line text-[1.03rem] leading-relaxed text-candle-muted">{blurb}</p>
           <div className="mt-8 flex flex-wrap gap-2.5">

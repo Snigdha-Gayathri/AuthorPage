@@ -10,7 +10,6 @@ import SiteFooter from "./sections/SiteFooter";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
-  const [activeBook, setActiveBook] = useState("ashes-and-algorithms");
   const [showAbout, setShowAbout] = useState(false);
 
   useEffect(() => {
@@ -26,13 +25,11 @@ export default function App() {
       <BookTrail />
       <StickyNav
         scrolled={scrolled}
-        activeBook={activeBook}
-        onBookChange={setActiveBook}
         onAboutClick={() => setShowAbout(true)}
       />
       <main>
         <HeroSection />
-        <BooksSection activeBook={activeBook} />
+        <BooksSection />
         <BookstagramSection />
         {showAbout ? <AboutAuthorSection /> : null}
       </main>
